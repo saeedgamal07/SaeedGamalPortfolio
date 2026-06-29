@@ -124,8 +124,8 @@ a {
 }
 
 .contact-links a {
-  flex-direction: column;
-  align-items: flex-start;
+  gap: 10px;
+  align-items: center;
   min-width: 0;
   max-width: 280px;
   min-height: 46px;
@@ -139,7 +139,29 @@ a {
   white-space: nowrap;
 }
 
-.contact-links span {
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
+.whatsapp-link .contact-icon {
+  color: #25d366;
+}
+
+.email-link .contact-icon {
+  color: var(--accent);
+}
+
+.contact-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-copy > span {
   color: var(--muted);
   font-size: 9px;
   font-weight: 750;
@@ -151,6 +173,7 @@ a {
 .contact-links strong {
   max-width: 100%;
   overflow: hidden;
+  color: var(--text);
   font-size: 13px;
   font-weight: 850;
   line-height: 1.25;
