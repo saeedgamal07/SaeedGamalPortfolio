@@ -39,8 +39,8 @@ a {
 
 .portfolio-document {
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: 64px minmax(0, 1fr);
+  display: flex;
+  flex-direction: column;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 180px),
     var(--surface);
@@ -51,29 +51,44 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  gap: 24px;
   min-width: 0;
-  padding: 0 clamp(14px, 3vw, 36px);
+  min-height: 76px;
+  padding: 12px clamp(14px, 3vw, 36px);
   border-bottom: 1px solid var(--line);
-  background: rgba(11, 11, 12, 0.92);
+  background:
+    linear-gradient(90deg, rgba(224, 0, 24, 0.13), transparent 42%),
+    rgba(11, 11, 12, 0.94);
   backdrop-filter: blur(16px);
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   min-width: 0;
   overflow: hidden;
   color: var(--text);
   font-size: clamp(15px, 1.7vw, 19px);
   font-weight: 850;
+  letter-spacing: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.brand::before {
+  width: 10px;
+  height: 28px;
+  flex: 0 0 auto;
+  background: var(--accent);
+  content: '';
 }
 
 .header-actions {
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   min-width: 0;
 }
 
@@ -99,14 +114,44 @@ a {
   text-transform: uppercase;
 }
 
+.document-actions a {
+  min-width: 130px;
+  border-color: rgba(224, 0, 24, 0.72);
+  background: var(--accent);
+  color: #ffffff;
+}
+
 .contact-links a {
-  max-width: 240px;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  max-width: 260px;
+  min-height: 44px;
   overflow: hidden;
-  color: var(--muted);
-  font-size: 11px;
+  padding: 6px 12px;
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
   text-overflow: ellipsis;
   text-transform: none;
   white-space: nowrap;
+}
+
+.contact-links span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 750;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.contact-links strong {
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 850;
+  line-height: 1.25;
+  text-overflow: ellipsis;
 }
 
 .document-bar nav a:hover,
@@ -115,7 +160,12 @@ a {
   background: rgba(224, 0, 24, 0.2);
 }
 
+.document-actions a:hover {
+  background: #b90014;
+}
+
 .document-stage {
+  flex: 1 1 auto;
   min-height: 0;
   padding: clamp(8px, 1.5vw, 18px);
 }
@@ -158,10 +208,6 @@ a {
     overflow: auto;
   }
 
-  .portfolio-document {
-    grid-template-rows: auto minmax(0, 1fr);
-  }
-
   .document-bar {
     min-height: 72px;
     align-items: flex-start;
@@ -183,6 +229,10 @@ a {
 
   .document-bar nav a {
     flex: 1;
+  }
+
+  .contact-links a {
+    max-width: none;
   }
 
   .document-stage {

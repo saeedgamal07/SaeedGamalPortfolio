@@ -22,12 +22,17 @@ onMounted(() => {
 
       <div class="header-actions">
         <nav class="contact-links" aria-label="Contact links">
-          <a :href="whatsappUrl" target="_blank" rel="noreferrer">WhatsApp: +20 1146769064</a>
-          <a :href="emailUrl">Email: saeedgamal0601@gmail.com</a>
+          <a :href="whatsappUrl" target="_blank" rel="noreferrer">
+            <span>WhatsApp</span>
+            <strong>+20 1146769064</strong>
+          </a>
+          <a :href="emailUrl">
+            <span>Email</span>
+            <strong>saeedgamal0601@gmail.com</strong>
+          </a>
         </nav>
 
         <nav class="document-actions" aria-label="Document actions">
-          <a :href="pdfUrl" target="_blank" rel="noreferrer">Open PDF</a>
           <a :href="pdfUrl" download>Download</a>
         </nav>
       </div>
