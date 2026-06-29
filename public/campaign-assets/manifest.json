@@ -1,0 +1,161 @@
+﻿[
+    {
+        "folder":  "Arabulid",
+        "slug":  "arabulid",
+        "images":  [
+                       "/campaign-assets/arabulid/arabulid-01.jpeg",
+                       "/campaign-assets/arabulid/arabulid-02.jpeg",
+                       "/campaign-assets/arabulid/arabulid-03.jpeg",
+                       "/campaign-assets/arabulid/arabulid-04.jpeg",
+                       "/campaign-assets/arabulid/arabulid-05.jpeg",
+                       "/campaign-assets/arabulid/arabulid-06.jpg"
+                   ]
+    },
+    {
+        "folder":  "Aya Kamal",
+        "slug":  "aya-kamal",
+        "images":  [
+                       "/campaign-assets/aya-kamal/aya-kamal-01.jpeg",
+                       "/campaign-assets/aya-kamal/aya-kamal-02.jpeg",
+                       "/campaign-assets/aya-kamal/aya-kamal-03.jpeg",
+                       "/campaign-assets/aya-kamal/aya-kamal-04.jpeg",
+                       "/campaign-assets/aya-kamal/aya-kamal-05.jpeg",
+                       "/campaign-assets/aya-kamal/aya-kamal-06.jpeg",
+                       "/campaign-assets/aya-kamal/aya-kamal-07.jpeg",
+                       "/campaign-assets/aya-kamal/aya-kamal-08.jpeg",
+                       "/campaign-assets/aya-kamal/aya-kamal-09.jpeg",
+                       "/campaign-assets/aya-kamal/aya-kamal-10.jpeg"
+                   ]
+    },
+    {
+        "folder":  "BIA",
+        "slug":  "bia",
+        "images":  [
+                       "/campaign-assets/bia/bia-01.jpeg",
+                       "/campaign-assets/bia/bia-02.jpeg",
+                       "/campaign-assets/bia/bia-03.jpeg",
+                       "/campaign-assets/bia/bia-04.jpeg",
+                       "/campaign-assets/bia/bia-05.jpeg",
+                       "/campaign-assets/bia/bia-06.jpg"
+                   ]
+    },
+    {
+        "folder":  "Creative Decor",
+        "slug":  "creative-decor",
+        "images":  [
+                       "/campaign-assets/creative-decor/creative-decor-01.jpeg",
+                       "/campaign-assets/creative-decor/creative-decor-02.jpeg",
+                       "/campaign-assets/creative-decor/creative-decor-03.jpeg",
+                       "/campaign-assets/creative-decor/creative-decor-04.jpeg",
+                       "/campaign-assets/creative-decor/creative-decor-05.jpg"
+                   ]
+    },
+    {
+        "folder":  "FishTime",
+        "slug":  "fishtime",
+        "images":  [
+                       "/campaign-assets/fishtime/fishtime-01.jpeg",
+                       "/campaign-assets/fishtime/fishtime-02.jpeg",
+                       "/campaign-assets/fishtime/fishtime-03.jpeg",
+                       "/campaign-assets/fishtime/fishtime-04.jpeg",
+                       "/campaign-assets/fishtime/fishtime-05.jpeg",
+                       "/campaign-assets/fishtime/fishtime-06.jpeg",
+                       "/campaign-assets/fishtime/fishtime-07.jpeg",
+                       "/campaign-assets/fishtime/fishtime-08.jpeg",
+                       "/campaign-assets/fishtime/fishtime-09.jpg"
+                   ]
+    },
+    {
+        "folder":  "Grand Yoza",
+        "slug":  "grand-yoza",
+        "images":  [
+                       "/campaign-assets/grand-yoza/grand-yoza-01.jpeg",
+                       "/campaign-assets/grand-yoza/grand-yoza-02.jpeg",
+                       "/campaign-assets/grand-yoza/grand-yoza-03.jpeg",
+                       "/campaign-assets/grand-yoza/grand-yoza-04.jpeg",
+                       "/campaign-assets/grand-yoza/grand-yoza-05.jpeg",
+                       "/campaign-assets/grand-yoza/grand-yoza-06.jpg"
+                   ]
+    },
+    {
+        "folder":  "Lucchi",
+        "slug":  "lucchi",
+        "images":  [
+                       "/campaign-assets/lucchi/lucchi-01.jpeg",
+                       "/campaign-assets/lucchi/lucchi-02.jpeg",
+                       "/campaign-assets/lucchi/lucchi-03.jpeg",
+                       "/campaign-assets/lucchi/lucchi-04.jpg"
+                   ]
+    },
+    {
+        "folder":  "Meats And Greats",
+        "slug":  "meats-and-greats",
+        "images":  [
+                       "/campaign-assets/meats-and-greats/meats-and-greats-01.jpeg",
+                       "/campaign-assets/meats-and-greats/meats-and-greats-02.jpeg",
+                       "/campaign-assets/meats-and-greats/meats-and-greats-03.jpeg",
+                       "/campaign-assets/meats-and-greats/meats-and-greats-04.jpeg",
+                       "/campaign-assets/meats-and-greats/meats-and-greats-05.jpeg",
+                       "/campaign-assets/meats-and-greats/meats-and-greats-06.jpeg",
+                       "/campaign-assets/meats-and-greats/meats-and-greats-07.jpeg",
+                       "/campaign-assets/meats-and-greats/meats-and-greats-08.jpeg",
+                       "/campaign-assets/meats-and-greats/meats-and-greats-09.jpeg",
+                       "/campaign-assets/meats-and-greats/meats-and-greats-10.jpg"
+                   ]
+    },
+    {
+        "folder":  "Mohamed Khalid Real Estate",
+        "slug":  "mohamed-khalid-real-estate",
+        "images":  [
+                       "/campaign-assets/mohamed-khalid-real-estate/mohamed-khalid-real-estate-01.jpeg",
+                       "/campaign-assets/mohamed-khalid-real-estate/mohamed-khalid-real-estate-02.jpeg",
+                       "/campaign-assets/mohamed-khalid-real-estate/mohamed-khalid-real-estate-03.jpeg"
+                   ]
+    },
+    {
+        "folder":  "Other Real-Estate Campaigns",
+        "slug":  "other-real-estate-campaigns",
+        "images":  [
+                       "/campaign-assets/other-real-estate-campaigns/other-real-estate-campaigns-01.jpeg",
+                       "/campaign-assets/other-real-estate-campaigns/other-real-estate-campaigns-02.jpeg",
+                       "/campaign-assets/other-real-estate-campaigns/other-real-estate-campaigns-03.jpeg",
+                       "/campaign-assets/other-real-estate-campaigns/other-real-estate-campaigns-04.jpeg",
+                       "/campaign-assets/other-real-estate-campaigns/other-real-estate-campaigns-05.jpeg",
+                       "/campaign-assets/other-real-estate-campaigns/other-real-estate-campaigns-06.jpeg",
+                       "/campaign-assets/other-real-estate-campaigns/other-real-estate-campaigns-07.jpeg",
+                       "/campaign-assets/other-real-estate-campaigns/other-real-estate-campaigns-08.jpeg"
+                   ]
+    },
+    {
+        "folder":  "Sa3edd",
+        "slug":  "sa3edd",
+        "images":  [
+
+                   ]
+    },
+    {
+        "folder":  "Saad-M-Saad",
+        "slug":  "saad-m-saad",
+        "images":  [
+                       "/campaign-assets/saad-m-saad/saad-m-saad-01.jpeg",
+                       "/campaign-assets/saad-m-saad/saad-m-saad-02.jpeg",
+                       "/campaign-assets/saad-m-saad/saad-m-saad-03.jpeg",
+                       "/campaign-assets/saad-m-saad/saad-m-saad-04.jpeg",
+                       "/campaign-assets/saad-m-saad/saad-m-saad-05.jpeg",
+                       "/campaign-assets/saad-m-saad/saad-m-saad-06.jpg"
+                   ]
+    },
+    {
+        "folder":  "Tree Design",
+        "slug":  "tree-design",
+        "images":  [
+                       "/campaign-assets/tree-design/tree-design-01.jpeg",
+                       "/campaign-assets/tree-design/tree-design-02.jpeg",
+                       "/campaign-assets/tree-design/tree-design-03.jpeg",
+                       "/campaign-assets/tree-design/tree-design-04.jpeg",
+                       "/campaign-assets/tree-design/tree-design-05.jpeg",
+                       "/campaign-assets/tree-design/tree-design-06.txt",
+                       "/campaign-assets/tree-design/tree-design-07.jpg"
+                   ]
+    }
+]
