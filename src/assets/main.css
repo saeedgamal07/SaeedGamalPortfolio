@@ -11,13 +11,13 @@
 
 html {
   min-width: 320px;
-  min-height: 100%;
+  height: 100%;
   background: var(--surface);
 }
 
 body {
   min-width: 320px;
-  min-height: 100vh;
+  height: 100%;
   overflow: hidden;
   background: var(--surface);
   color: var(--text);
@@ -34,11 +34,11 @@ a {
 }
 
 #app {
-  min-height: 100vh;
+  height: 100%;
 }
 
 .portfolio-document {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background:
@@ -53,8 +53,8 @@ a {
   justify-content: space-between;
   gap: 24px;
   min-width: 0;
-  min-height: 76px;
-  padding: 12px clamp(14px, 3vw, 36px);
+  flex: 0 0 auto;
+  padding: 14px clamp(16px, 3vw, 36px);
   border-bottom: 1px solid var(--line);
   background:
     linear-gradient(90deg, rgba(224, 0, 24, 0.13), transparent 42%),
@@ -66,6 +66,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  flex: 0 1 auto;
   min-width: 0;
   overflow: hidden;
   color: var(--text);
@@ -77,8 +78,8 @@ a {
 }
 
 .brand::before {
-  width: 10px;
-  height: 28px;
+  width: 8px;
+  height: 30px;
   flex: 0 0 auto;
   background: var(--accent);
   content: '';
@@ -86,8 +87,9 @@ a {
 
 .header-actions {
   display: flex;
-  flex-shrink: 0;
+  flex: 1 1 auto;
   align-items: center;
+  justify-content: flex-end;
   gap: 16px;
   min-width: 0;
 }
@@ -104,33 +106,33 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 38px;
-  padding: 0 14px;
+  min-height: 42px;
+  padding: 0 16px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.04);
   color: var(--text);
   font-size: 12px;
   font-weight: 850;
-  text-transform: uppercase;
 }
 
 .document-actions a {
-  min-width: 130px;
+  min-width: 128px;
   border-color: rgba(224, 0, 24, 0.72);
   background: var(--accent);
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .contact-links a {
   flex-direction: column;
   align-items: flex-start;
   min-width: 0;
-  max-width: 260px;
-  min-height: 44px;
+  max-width: 280px;
+  min-height: 46px;
   overflow: hidden;
-  padding: 6px 12px;
+  padding: 7px 14px;
   border-color: rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.045);
   color: var(--text);
   text-overflow: ellipsis;
   text-transform: none;
@@ -139,19 +141,21 @@ a {
 
 .contact-links span {
   color: var(--muted);
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 750;
   line-height: 1.1;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .contact-links strong {
   max-width: 100%;
   overflow: hidden;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 850;
   line-height: 1.25;
   text-overflow: ellipsis;
+  text-transform: none;
 }
 
 .document-bar nav a:hover,
@@ -166,13 +170,14 @@ a {
 
 .document-stage {
   flex: 1 1 auto;
+  display: flex;
   min-height: 0;
   padding: clamp(8px, 1.5vw, 18px);
 }
 
 .pdf-frame {
+  flex: 1 1 auto;
   width: 100%;
-  height: 100%;
   min-height: 0;
   display: block;
   border: 1px solid var(--line);
@@ -208,12 +213,16 @@ a {
     overflow: auto;
   }
 
+  .portfolio-document {
+    min-height: 100vh;
+    height: auto;
+  }
+
   .document-bar {
-    min-height: 72px;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    padding-block: 10px;
+    padding-block: 12px;
   }
 
   .header-actions {
