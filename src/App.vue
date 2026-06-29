@@ -2,6 +2,8 @@
 import { onMounted } from 'vue'
 
 const pdfUrl = '/SaeedGamal.Portfolio..pdf'
+const whatsappUrl = 'https://wa.me/201146769064'
+const emailUrl = 'mailto:saeedgamal0601@gmail.com'
 
 onMounted(() => {
   const isSmallTouchDevice = window.matchMedia('(max-width: 768px) and (pointer: coarse)').matches
@@ -18,10 +20,17 @@ onMounted(() => {
     <header class="document-bar">
       <a class="brand" :href="pdfUrl" target="_blank" rel="noreferrer">Saeed Gamal Portfolio</a>
 
-      <nav aria-label="Document actions">
-        <a :href="pdfUrl" target="_blank" rel="noreferrer">Open PDF</a>
-        <a :href="pdfUrl" download>Download</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="contact-links" aria-label="Contact links">
+          <a :href="whatsappUrl" target="_blank" rel="noreferrer">WhatsApp: +20 1146769064</a>
+          <a :href="emailUrl">Email: saeedgamal0601@gmail.com</a>
+        </nav>
+
+        <nav class="document-actions" aria-label="Document actions">
+          <a :href="pdfUrl" target="_blank" rel="noreferrer">Open PDF</a>
+          <a :href="pdfUrl" download>Download</a>
+        </nav>
+      </div>
     </header>
 
     <section class="document-stage">

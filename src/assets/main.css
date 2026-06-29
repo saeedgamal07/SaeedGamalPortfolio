@@ -69,6 +69,14 @@ a {
   white-space: nowrap;
 }
 
+.header-actions {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
 .document-bar nav {
   display: flex;
   flex-shrink: 0;
@@ -89,6 +97,16 @@ a {
   font-size: 12px;
   font-weight: 850;
   text-transform: uppercase;
+}
+
+.contact-links a {
+  max-width: 240px;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 11px;
+  text-overflow: ellipsis;
+  text-transform: none;
+  white-space: nowrap;
 }
 
 .document-bar nav a:hover,
@@ -150,6 +168,13 @@ a {
     flex-direction: column;
     justify-content: center;
     padding-block: 10px;
+  }
+
+  .header-actions {
+    width: 100%;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .document-bar nav {
