@@ -1,5 +1,16 @@
 <script setup>
+import { onMounted } from 'vue'
+
 const pdfUrl = '/SaeedGamal.Portfolio..pdf'
+
+onMounted(() => {
+  const isSmallTouchDevice = window.matchMedia('(max-width: 768px) and (pointer: coarse)').matches
+  const isMobileBrowser = /Android|iPhone|iPod|Windows Phone/i.test(window.navigator.userAgent)
+
+  if (isSmallTouchDevice || isMobileBrowser) {
+    window.location.replace(pdfUrl)
+  }
+})
 </script>
 
 <template>
