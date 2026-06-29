@@ -29,7 +29,6 @@ onMounted(() => {
               />
             </svg>
             <span class="contact-copy">
-              <span>WhatsApp</span>
               <strong>+20 1146769064</strong>
             </span>
           </a>
@@ -40,7 +39,6 @@ onMounted(() => {
               />
             </svg>
             <span class="contact-copy">
-              <span>Email</span>
               <strong>saeedgamal0601@gmail.com</strong>
             </span>
           </a>
