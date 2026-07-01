@@ -1,13 +1,17 @@
 <script setup>
-const pdfUrl = `${import.meta.env.BASE_URL}SaeedGamal.Portfolio..pdf`
+import { ref } from 'vue'
+import PdfViewer from './components/PdfViewer.vue'
+
+const pdfUrl = `${import.meta.env.BASE_URL}SaeedGamal.Portfolio.web.pdf`
 const whatsappUrl = 'https://wa.me/201146769064'
 const emailUrl = 'mailto:saeedgamal0601@gmail.com'
+const isPortfolioOpen = ref(false)
 </script>
 
 <template>
   <main class="portfolio-document" aria-label="Saeed Gamal portfolio PDF">
     <header class="document-bar">
-      <a class="brand" :href="pdfUrl" target="_blank" rel="noreferrer">Saeed Gamal Portfolio</a>
+      <button class="brand" type="button" @click="isPortfolioOpen = true">Saeed Gamal Portfolio</button>
 
       <div class="header-actions">
         <nav class="contact-links" aria-label="Contact links">
@@ -34,24 +38,25 @@ const emailUrl = 'mailto:saeedgamal0601@gmail.com'
         </nav>
 
         <nav class="document-actions" aria-label="Document actions">
+          <button type="button" @click="isPortfolioOpen = true">View Portfolio</button>
           <a :href="pdfUrl" download>Download</a>
         </nav>
       </div>
     </header>
 
     <section class="document-stage">
-      <object
-        class="pdf-frame"
-        :data="`${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1&view=FitH`"
-        type="application/pdf"
-        aria-label="Saeed Gamal portfolio PDF preview"
-      >
-        <div class="pdf-fallback">
-          <h1>Saeed Gamal Portfolio</h1>
-          <p>Your browser cannot preview this PDF inline.</p>
-          <a :href="pdfUrl" target="_blank" rel="noreferrer">Open the portfolio PDF</a>
-        </div>
-      </object>
+      <PdfViewer
+        v-if="isPortfolioOpen"
+        :src="`${pdfUrl}#toolbar=1&navpanes=0&scrollbar=1&view=FitH`"
+        title="Saeed Gamal Portfolio"
+        @close="isPortfolioOpen = false"
+      />
+
+      <div v-else class="pdf-launch">
+        <h1>Saeed Gamal Portfolio</h1>
+        <p>Open the portfolio directly as a PDF.</p>
+        <button type="button" @click="isPortfolioOpen = true">View Portfolio</button>
+      </div>
     </section>
   </main>
 </template>
